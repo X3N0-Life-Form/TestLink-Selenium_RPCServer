@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="1" failures="0" hostname="pcadt" name="TestSeleniumBidonWdError" tests="1" time="13.676" timestamp="2012-03-16T08:44:35">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="selenium_path" value="E:\lib\selenium-java-2.20.0.jar" />
+    <property name="lib" value="E:\lib" />
+    <property name="os.name" value="Windows XP" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre7\lib\resources.jar;C:\Program Files\Java\jre7\lib\rt.jar;C:\Program Files\Java\jre7\lib\sunrsasign.jar;C:\Program Files\Java\jre7\lib\jsse.jar;C:\Program Files\Java\jre7\lib\jce.jar;C:\Program Files\Java\jre7\lib\charsets.jar;C:\Program Files\Java\jre7\classes" />
+    <property name="TODAY" value="March 16 2012" />
+    <property name="report" value="E:\test_main\TestSeleniumBidonWdError\report" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.version" value="1.7.0_03-b05" />
+    <property name="junit_path" value="E:\lib\junit-4.10.jar" />
+    <property name="user.name" value="adt" />
+    <property name="ant.file.E:/test_main/TestSeleniumBidonWdError" value="E:\test_main\TestSeleniumBidonWdError\build.xml" />
+    <property name="user.language" value="fr" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre7\bin" />
+    <property name="ant.project.default-target" value="compile" />
+    <property name="ant.project.name" value="E:/test_main/TestSeleniumBidonWdError" />
+    <property name="DSTAMP" value="20120316" />
+    <property name="java.version" value="1.7.0_03" />
+    <property name="user.timezone" value="Europe/Paris" />
+    <property name="bin" value="E:\test_main\TestSeleniumBidonWdError\bin" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre7\lib\endorsed" />
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="ant.file.type.E:/test_main/TestSeleniumBidonWdError" value="file" />
+    <property name="java.class.version" value="51.0" />
+    <property name="src" value="E:\test_main\TestSeleniumBidonWdError\src" />
+    <property name="user.country" value="FR" />
+    <property name="java.home" value="C:\Program Files\Java\jre7" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="ant.file" value="E:\test_main\TestSeleniumBidonWdError\build.xml" />
+    <property name="os.version" value="5.1" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="22.1-b02" />
+    <property name="user.variant" value="" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="user.script" value="" />
+    <property name="user.home" value="C:\Documents and Settings\adt" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="java.library.path" value="C:\WINDOWS\system32;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Intel\DMIX;C:\Program Files\TortoiseSVN\bin;E:\apache-maven-3.0.4\bin;E:\eclipse;E:\apache-ant-1.8.3\bin;C:\MinGW\bin;C:\Python32;." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="TLS_XmlRpcServer-1.1.jar 8081" />
+    <property name="java.class.path" value="TLS_XmlRpcServer-1.1.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.3 compiled on February 26 2012" />
+    <property name="TSTAMP" value="0944" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="selenium_lib" value="E:\lib\selenium-2.20.0" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="Service Pack 3" />
+    <property name="java.io.tmpdir" value="C:\DOCUME~1\adt\LOCALS~1\Temp\" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="test_name" value="TestSeleniumBidonWdError" />
+    <property name="os.arch" value="x86" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre7\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+    <property name="user.dir" value="E:\eclipse workspace &amp; lib\TLS_XmlRpcServer" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="basedir" value="E:\test_main\TestSeleniumBidonWdError" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="ant.core.lib" value="E:\eclipse workspace &amp; lib\TLS_XmlRpcServer\TLS_XmlRpcServer-1.1.jar" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="java.specification.version" value="1.7" />
+  </properties>
+  <testcase classname="TestSeleniumBidonWdError" name="testSeleniumBidonWd" time="13.551">
+    <error message="12" type="java.lang.ArrayIndexOutOfBoundsException">java.lang.ArrayIndexOutOfBoundsException: 12
+	at TestSeleniumBidonWdError.getError(Unknown Source)
+	at TestSeleniumBidonWdError.testSeleniumBidonWd(Unknown Source)
+	at server.TestExecutor.runTest(TestExecutor.java:161)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+</error>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

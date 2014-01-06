@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--version = 1.2-->
+<!--This is what a plugin .xml file should look like.-->
+<plugin name="#name#" version="#version-number#">
+	<file-extensions>
+		<!--May contain several file extensions.-->
+		<file-extension>#file_extension#</file-extension>
+	</file-extensions>
+	<!--Must comply to java regex standards.-->
+	<script-regex>#regex#</script-regex>
+	<!--Run a test from the server.-->
+	<compile>
+		<!--This is the compile command line-->
+		#compile_cmd#
+	</compile>
+	<run-test type='either "command-line" or "code"'>
+		<!--If "command-line": should contain the command line required to run that test from the server.-->
+		<!--If "code": should contain java code that will allow the plugin to run the test-->
+	
+		#command-line#
+		</run-test><!--Run a test script provided by a client.-->
+	<run-test-script type='either "command-line" or "code"'>
+		<!--Same as "run-test"-->
+		#another-command-line#
+	</run-test-script>
+</plugin>
