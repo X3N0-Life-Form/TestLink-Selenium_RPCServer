@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="#folderName#"
+		basedir="."
+		default="compile">
+
+	<!--
+		version: 1.1
+			added the "test_package" property
+		version: 1.2
+			added #junit-version# & #selenium-version#
+	-->
+
+	<!-- #################################### -->
+	<!-- set global properties for this build -->
+	<!-- #################################### -->
+	<!-- directories -->
+	<property name="src" location="src"/>
+	<property name="bin" location="bin"/>
+	<property name="lib" location="#lib#"/>
+	<property name="report" location="report"/>
+	<!-- libraries -->
+	<property name="junit_path" location="#lib#junit-#junit-version#.jar"/>
+	<property name="selenium_path" location="#lib#selenium-java-#selenium-version#.jar"/>
+	<property name="selenium_lib" location="#lib#selenium-#selenium-version#"/>
+	<!-- test class -->
+	<property name="test_name" value="#testName#"/>
+	<property name="test_package" value="#testPackage#"/>
+	
+	<!-- ####### -->
+	<!-- Targets -->
+	<!-- ####### -->
+	<target name="default" depends="compile" description="default task, it compiles the source code">
+	
+	</target>
+	
+	<target name="init">
+		<!-- Create the time stamp -->
+		<tstamp/>
+		<!-- Create the build directory structure used by compile -->
+		<mkdir dir="${bin}"/>
+	</target>
+
+	<target name="compile" depends="init" description="compile the source">
+		<!-- Compile the java code from ${src} into ${build} -->
+		<javac srcdir="${src}" destdir="${bin}">
+			<classpath>
+				<pathelement location="${junit_path}"/>
+				<pathelement location="${selenium_path}"/>
+			</classpath>
+		</javac>
+	</target>
+	
+	<target name="test" depends="compile" description="run the tests">
+		<!-- Run any test contained in the build folder -->
+		<junit printsummary="on">
+			<test name="${test_package}.${test_name}"/>
+			<formatter type="plain" usefile="false"/>
+			<classpath>
+				<pathelement location="${bin}"/>
+				<pathelement location="${junit_path}"/>
+				<pathelement location="${selenium_path}"/>
+				<fileset dir="${selenium_lib}">
+					<include name="**/*.jar"/>
+				</fileset>
+			</classpath>
+		</junit>
+	</target>
+	
+	<target name="test+report" depends="compile" description="near copy-pasta of 'test'">
+		<!-- Run any test contained in the build folder -->
+		<junit printsummary="on">
+			<test name="${test_package}.${test_name}" todir="${report}"/>
+			<formatter type="xml" usefile="true"/>
+			<classpath>
+				<pathelement location="${bin}"/>
+				<pathelement location="${junit_path}"/>
+				<pathelement location="${selenium_path}"/>
+				<fileset dir="${selenium_lib}">
+					<include name="**/*.jar"/>
+				</fileset>
+			</classpath>
+		</junit>
+	</target>
+	
+	
+	<target name="clean" description="clean up" >
+		<!-- Delete the ${build} and ${report} directory trees -->
+		<delete dir="${build}"/>
+		<delete dir="${report}"/>
+	</target>
+
+
+</project>

@@ -1,0 +1,6 @@
+MainDirectory:		main_dir
+Port:				4919
+Lib:					lib_dir
+SeleniumServerDir:	selenium_server_dir
+Log:					YES
+SeleniumServerJar:	selenium_server_jar
